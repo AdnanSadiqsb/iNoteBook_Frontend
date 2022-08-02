@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0px;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.notes-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+}
+.note-item{
+    position: relative;
+    border: 3px solid rgba(0, 0, 0, 0.144);
+    background-color: rgba(0, 255, 255, 0.137);
+    padding: 0.5rem 0.5rem;
+    width: 300px;
+    min-height: 200px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tag{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(20%, -50%) ;
+    background-color: #23252B;
+    color: white;
+    padding: 0.2rem 0.3rem;
+    border-radius: 5px;
+
+}
+.noteTitle{
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    border-bottom:3px solid rgba(0, 0, 0, 0.144); 
+}
+.noteDate{
+    border-top: 3px solid rgba(0, 0, 0, 0.144); 
+    width: 100%;
+    text-align: center;
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+    color: #23252b9a;
+
+}
+.description{
+    padding: 1rem;
+    
+}

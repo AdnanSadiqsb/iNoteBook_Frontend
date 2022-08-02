@@ -90,6 +90,10 @@ header .navigation .menu {
     display: none;
 }
 
+.linkActive{
+    font-size: 1.4rem !important;
+    color: white;
+}
 @media (max-width:900px) {
     header .navigation .menu {
         position: relative;

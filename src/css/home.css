@@ -8,4 +8,59 @@
 
 .home-sec{
     margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+.home-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+    width: 100%;
+    
+}
+
+.fields input{
+    width: 100%;
+    padding: 6px 1px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.186);
+    outline: none;
+    padding-left: 10PX;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    
+}
+.fields textarea{
+    width: 100%;
+    padding: 6px 1px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.186);
+    outline: none;
+    padding-left: 10PX;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    resize: none;
+}
+.fields textarea:hover{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.fields input:hover{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.fields label{
+    font-size: 1.4rem;
+    
 }

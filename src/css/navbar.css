@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0px;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0px;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #23252B;
+    box-shadow: 0 5px 25px rgb(0 0 0 /20%);
+    padding: 0 100px;
+    transition: 0.6s;
+    /* scroll-behavior: smooth; */
+}
+
+section {
+    padding: 20px 100px;
+}
+
+
+
+
+
+
+header .logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: lowercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+header .navigation {
+    position: relative;
+    line-height: 75px;
+}
+
+header .navigation .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    user-select: none;
+}
+
+.menur-item>a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 20px;
+    padding: 25px 0;
+}
+
+.menur-item a:hover {
+    color: steelblue;
+    transition: 0.5s;
+}
+
+
+
+
+
+.menur-item .sub-menu .sub-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 15px 15px;
+}
+
+
+
+
+
+
+.close {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+}
+
+@media (max-width:900px) {
+    header .navigation .menu {
+        position: relative;
+        display: flex;
+        height: 100vh;
+        position: fixed;
+        min-width: 250px;
+        top: 0%;
+        right: 0%;
+        padding: 90px 50px;
+        background: #23252B;
+        justify-content: center;
+        list-style: none;
+        user-select: none;
+        display: none;
+        overflow-y: auto;
+    }
+    header .navigation .menu.active {
+        display: block
+    }
+    .menur-item {
+        position: relative;
+    }
+    .menur-item .sub-menu {
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: translateX(10px);
+        border-radius: 5px;
+        transition: 0.3s;
+        overflow: hidden;
+        display: none;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 0%;
+        left: 0%;
+        cursor: pointer;
+    }
+    .close img {
+        position: absolute;
+        background-color: white;
+        width: 40px;
+        height: 40px;
+        top: 0%;
+        left: 0%;
+    }
+    .menu-btn {
+        display: block;
+        position: absolute;
+        top: 0%;
+        right: 20px;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
+    .menu-btn img {
+        display: block;
+        /* position: absolute; */
+        top: 0%;
+        right: 20px;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
+    header {
+        padding: 20px 20px;
+    }
+}

@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
     margin: 0px;
     padding: 0%;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+        box-sizing: border-box;
 }
 
 .home-sec{
-    margin-top: 5rem;
+
     display: flex;
     flex-direction: column;
 
@@ -17,8 +16,10 @@
 .home-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
-    width: 80%;
+    width: 60%;
 }
 
 .fields{
@@ -32,35 +33,56 @@
 
 .fields input{
     width: 100%;
-    padding: 6px 1px;
+    padding: 10px ;
     border-radius: 5px;
-    border: 2px solid rgba(0, 0, 0, 0.186);
-    outline: none;
-    padding-left: 10PX;
-    letter-spacing: 2px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;    letter-spacing: 2px;
     font-size: 1rem;
+    outline: none;
+    border: none;
     
 }
 .fields textarea{
+    border: none;
     width: 100%;
     padding: 6px 1px;
     border-radius: 5px;
-    border: 2px solid rgba(0, 0, 0, 0.186);
-    outline: none;
     padding-left: 10PX;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;    letter-spacing: 2px;
+
     letter-spacing: 2px;
     font-size: 1rem;
     resize: none;
 }
 .fields textarea:hover{
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 1px 4px, rgba(51, 51, 51, 0.477) 0px 0px 0px 3px;    padding-left: 10PX;
+
 }
 
 .fields input:hover{
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 1px 4px, rgba(51, 51, 51, 0.492) 0px 0px 0px 3px;    padding-left: 10PX;
+
+}
+input:focus {
+    outline: none !important;
 }
 
 .fields label{
     font-size: 1.4rem;
+    font-weight: bold;
     
+}
+
+.stn-submit{
+    padding: 0.3rem 1rem;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    background-color: #23252B;
+    min-width: 30%;
+    color: white;
+    
+
+}
+.stn-submit:disabled{
+    background-color: #23252b79;
 }

@@ -88,7 +88,7 @@ const onChange=async(e)=>{
 
 
     <div>
-        <h2 style={{'textAlign':'center'}}>Your Notes</h2>
+        <h2 className='note-heading' >Your Notes</h2>
         <div className="notes-container">
           {notes.length===0 && 'No notes to dispaly'}
         {

@@ -44,7 +44,7 @@ export default function SignUp() {
      <form onSubmit={signUPClick} >
     <div className="update-section" id='update-section'>
     <div className="update-con">
-    <h1>SignUp Here</h1>
+    <h1 className='note-heading'> SignUp Here</h1>
      <div className="home-container">
       <div className='fields'>
           <label htmlFor="name">User Name</label>

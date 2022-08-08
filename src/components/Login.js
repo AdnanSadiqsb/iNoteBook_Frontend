@@ -61,7 +61,7 @@ export default function Login() {
 
     <div className="update-section" id='update-section'>
     <div className="update-con">
-    <h1>Login Here</h1>
+    <h1 className='note-heading'>Login Here</h1>
       <div className="home-container">
         <div className='fields'>
           <label htmlFor="title">Email</label>

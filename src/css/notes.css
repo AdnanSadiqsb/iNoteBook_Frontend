@@ -4,7 +4,17 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+.note-heading{
+    padding: 2rem 0.5rem;
+    text-align: center;
+    font-size: 50px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 
+}
 .notes-container{
     display: flex;
     justify-content: center;
@@ -16,13 +26,12 @@
 }
 .note-item{
     position: relative;
-    border: 3px solid rgba(0, 0, 0, 0.144);
-    background-color: rgba(0, 255, 255, 0.137);
+    box-shadow: #553c9a 0px 1px 4px, #9b65d0 0px 0px 0px 3px;    padding-left: 10PX;
+
     padding: 0.5rem 0.5rem;
     width: 300px;
     height: 340px;
     border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -36,7 +45,7 @@
     top: 0;
     right: 0;
     transform: translate(20%, -50%) ;
-    background-color: #23252B;
+    background-image: linear-gradient(to left, #553c9a, #b393d3);
     color: white;
     padding: 0.2rem 0.3rem;
     border-radius: 5px;
@@ -47,21 +56,21 @@
     overflow: hidden;
     padding-bottom: 0.5rem;
     width: 100%;
-    border-bottom:1px solid rgba(0, 0, 0, 0.144); 
+    border-bottom:1px solid  #553c9a; 
 }
 .noteDate{
-    border-top: 1px solid rgba(0, 0, 0, 0.144); 
+    border-top: 1px solid  #553c9a; 
     width: 100%;
     text-align: center;
     padding-top: 0.5rem;
     font-size: 0.8rem;
-    color: #23252b9a;
+    color:  #553c9a;
 
 }
 .description{
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    color: #23252bcc;
+    color:  #553c9a;
     letter-spacing: 0.4px;
     max-height: 200px; 
     /* overflow: scroll;
@@ -70,6 +79,15 @@
       overflow-y: auto;
      direction: ltr; 
     
+}
+.noteTitle h2{
+    font-size: 30px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+
 }
 
 .icons{
@@ -93,12 +111,12 @@
     transition: all 0.5s ease-in;
     opacity: 0;
     user-select: none; 
-    color: #23252b88;
+    color: #b393d3;
 
 }
 .icons i:hover{
     cursor: pointer;
-    color: black;
+    color:  #553c9a;
 }
 .note-item:hover .icons{
     transform: translateX(0);
@@ -124,7 +142,7 @@
 
 .update-section{
     position: fixed;
-    top: 0;
+    top: 100px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -132,16 +150,15 @@
     align-items: center;
     justify-content: center;
     z-index: 999;
-    background: rgba(18, 14, 14, 0.5);
-    backdrop-filter: blur(6px);
+    background: rgba(218, 208, 208, 0.225);
+    backdrop-filter: blur(1px);
     
 }
 
 .update-con{
-    background: rgba(245, 237, 237, 0.5);
-    
+    background: rgba(250, 250, 250, 0.962);
+    padding: 2rem 0.5rem;
     position: relative;
-    height: 550px;
     min-width: 50%;
     opacity: 1;
     display: flex;
@@ -149,28 +166,31 @@
     justify-content: center;
     flex-direction: column;
     border-radius: 20px;
-    box-shadow: rgba(36, 36, 192, 0.2) 0px 7px 29px 6px;
+    box-shadow: rgba(41, 41, 46, 0.2) 0px 7px 29px 6px;
 
 }
 .cancel-btn{
     position: absolute;
     top: 0;
     right: 0;
-    padding: 0.5rem 1rem;
-    color: red;
+    padding: 0rem 0.5rem;
+    color:  #553c9a;
     font-weight: bold;
     cursor: pointer;
 }
 .toggle{
     display: none;
 }
-.home-container{
-    width: 95% !important;
-}
+
 
 @media (max-width:900px) {
-
+    .home-container{
+        width: 95% !important;
+    }
     .update-con{
         min-width: 90%
+    }
+    .update-section{
+        top: 150px;
     }
 }

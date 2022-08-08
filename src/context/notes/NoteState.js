@@ -128,7 +128,7 @@ const notesinitial=[]
 
     }
     return (
-        <NoteContext.Provider value={{notes,getAllNotes, setNotes, deleteNote, updateNote, addNotes,getUserInfo}} >
+        <NoteContext.Provider value={{notes,getAllNotes, setNotes, deleteNote, updateNote,getUserInfo,  userData}} >
             {
                 props.children
             }
